@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #eef4fb, #ffffff);
+}
+
+.clock-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.clock-card {
+    max-width: 650px;
+    margin: auto;
+
+    padding: 50px 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #dbe5f0;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(20, 50, 100, 0.12);
+}
+
+.label {
+    margin-bottom: 20px;
+
+    color: #ff5a1f;
+
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+#clock {
+    color: #102a72;
+
+    font-size: clamp(55px, 12vw, 100px);
+
+    letter-spacing: 5px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.date {
+    color: #60708d;
+    font-size: 18px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .clock-card {
+        padding: 40px 15px;
+        border-radius: 15px;
+    }
+
+    .label {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    #clock {
+        letter-spacing: 2px;
+    }
+
+    .date {
+        font-size: 15px;
+    }
+}
